@@ -34,3 +34,7 @@ public class Book {
         this.price = price;
     }
 }
+
+public record Book(int bookid, String title, double price, String author, String publisher) {
+    // No need to explicitly define fields, constructors, equals, hashCode, or toString
+}
